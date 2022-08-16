@@ -4,57 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/botao_desenho"
+    android:background="@drawable/background_auau"
     tools:context=".LoginMobile">
 
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="All QR"
-      android:textSize="80sp"
-      android:layout_gravity="center"/>
-
-  <EditText
-      android:id="@+id/edtUsuario"
-      android:layout_width="match_parent"
-      android:layout_height="48dp"
-      android:backgroundTint="@color/black"
-      android:inputType="textEmailAddress"
-      android:maxLength="50" />
-
-  <EditText
-      android:id="@+id/edtSenha"
-      android:layout_width="match_parent"
-      android:layout_height="48dp"
-      android:layout_marginTop="10dp"
-      android:backgroundTint="#000"
-      android:inputType="textPassword"
-      android:maxLength="50" />
-
-  <Button
-      android:id="@+id/btnEntrar"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_margin="5dp"
-      android:backgroundTint="@color/black"
-      android:text="Entrar" />
-
-  <Button
-      android:id="@+id/btnSair"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_margin="5dp"
-      android:backgroundTint="#000"
-      android:onClick="sairSistema"
-      android:text="Sair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="120dp"
+            android:text="All QrCode"
+            android:textColor="@color/white"
+            android:textSize="70sp" />
 
 
- </LinearLayout>
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="400dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/borda_login"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:text="Enter your user or email" />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="400dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borda_login"
+            android:inputType="textPassword"
+            android:maxLength="50" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chbLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="@+id/txtLembrarCredenciais" />
+
+            <TextView
+                android:id="@+id/txtLembrarCredenciais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lembrar credenciais"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtEsqueciMinhaSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Esqueci minha senha"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 </ScrollView>
 
 
