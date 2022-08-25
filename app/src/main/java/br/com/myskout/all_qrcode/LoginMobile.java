@@ -20,7 +20,7 @@ public class LoginMobile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //abrir o meu layout
-        setContentView(R.layout.activity_all_qr_code);
+        setContentView(R.layout.activity_login_mobile);
         //Apresentar as variaveis Java para as variaveis xml
         edtUsuario = findViewById(R.id.edtUsuario);
         edtSenha = findViewById(R.id.edtSenha);
@@ -41,7 +41,8 @@ public class LoginMobile extends AppCompatActivity {
                 if (usuario.equals("Senac") && senha.equals("Senac")) {
                     //Abrindo outra janela
                     //Duas formas de abrir uma janela
-                    startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
+                    //no allqr.class que troca
+                    startActivity(new Intent(getApplicationContext(), AllQrCode.class));
                     finish();
 
                 } else {
@@ -54,6 +55,7 @@ public class LoginMobile extends AppCompatActivity {
                 }
             }
         });
+
     }
 
     //criando o método limpar janela
@@ -63,9 +65,5 @@ public class LoginMobile extends AppCompatActivity {
         edtUsuario.requestFocus();
     }
 
-    //Vai sair do sistema
-    public void sairSistema(View view) {
-        finish();
-    }
 
 }

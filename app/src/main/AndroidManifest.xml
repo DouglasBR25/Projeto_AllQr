@@ -14,20 +14,24 @@
         android:theme="@style/Theme.AllQRcode"
         tools:targetApi="31">
         <activity
+            android:name=".Teste"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".LoginMobile"
-            android:exported="false" />
-        <activity
-            android:name=".AllQrCode"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
+        <activity
+            android:name=".AllQrCode"
+            android:exported="false" />
     </application>
 
 </manifest>

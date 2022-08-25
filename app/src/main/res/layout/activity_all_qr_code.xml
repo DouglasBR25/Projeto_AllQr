@@ -17,14 +17,15 @@
 
 
         <ImageView
-            android:layout_width="400dp"
-            android:layout_height="310dp"
+            android:layout_width="415dp"
+            android:layout_height="320dp"
             android:src="@drawable/hamburgue" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="50dp"
+            android:orientation="horizontal">
 
 
             <TextView
@@ -32,7 +33,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:text="Zinger Burger"
-                android:textColor="@color/white"
+                android:textColor="#FFC107"
+                android:shadowColor="#43a047"
+                android:shadowRadius="10"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
@@ -42,54 +45,48 @@
                 android:layout_margin="6dp"
                 android:text="R$ 14.99"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnMenos"
                 android:layout_width="40dp"
-
-
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:backgroundTint="#FF2C00"
+                android:backgroundTint="#f0FF2C00"
                 android:gravity="center"
-
                 android:text="-"
                 android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
-            <Button
-                android:id="@+id/btnQuantidade"
-                android:layout_width="41dp"
-
-
-                android:layout_height="40dp"
+            <EditText
+                android:id="@+id/edtQuantidade"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/black"
+                android:background="@drawable/borda_botao_quantidade"
                 android:gravity="center"
-
                 android:text="1"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
             <Button
                 android:id="@+id/btnMais"
                 android:layout_width="43dp"
-
-
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:backgroundTint="#3F7D20"
+                android:backgroundTint="#B73F7D20"
                 android:gravity="center"
                 android:text="+"
-
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
         </LinearLayout>
@@ -122,12 +119,13 @@
                 android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
-                android:backgroundTint="#868686"
+                android:backgroundTint="#68868686"
                 android:gravity="center"
                 android:text="Aplicar cupom"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -149,17 +147,15 @@
                 android:id="@+id/btnAdicionarItens"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
-
                 android:layout_margin="5dp"
                 android:layout_marginRight="@+id/btnAplicarCupom"
-                android:backgroundTint="#868686"
+                android:backgroundTint="#68868686"
                 android:gravity="center"
                 android:text="Adicionar Itens"
-
-
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
 
@@ -180,18 +176,15 @@
             <Button
                 android:id="@+id/btnCombos"
                 android:layout_width="250dp"
-
-
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
-                android:backgroundTint="#868686"
+                android:backgroundTint="#68868686"
                 android:gravity="center"
-
                 android:text="Combos"
-
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -199,9 +192,9 @@
             android:id="@+id/btnItem"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:backgroundTint="#FF2C00"
             android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="#48FF2C00"
             android:gravity="center"
             android:text="1 item R$ 14,99"
             android:textColor="@color/white"

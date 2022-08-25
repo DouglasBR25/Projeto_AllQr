@@ -44,7 +44,6 @@
             android:background="@drawable/borda_login"
             android:inputType="textPassword"
             android:hint="insira sua senha"
-            android:textColorHint="@color/white"
             android:maxLength="50"
             android:textColor="@color/white"
             tools:ignore="SpeakableTextPresentCheck" />
